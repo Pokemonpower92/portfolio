@@ -98,19 +98,19 @@ export default function Projects() {
             >
                 <Card className={classes.catalog}>
                     <CardActionArea
-                    href="https://github.com/Pokemonpower92/Knife_Catalog"
+                    href="https://pokemonpower92.github.io/lightsOut/"
                     >
                         <CardMedia
                         className={classes.catalog_media}
                         image={background}
-                        title="Catalog"
+                        title="Lights Out!"
                         />
                         <CardContent className={classes.catalog_content}>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Collections catalog
+                            React Application
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            A command-line collections catalog written in C++
+                            A handheld game emulator written in React.
                         </Typography>
                         </CardContent>
                     </CardActionArea>
