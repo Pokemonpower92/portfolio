@@ -4,53 +4,38 @@ import { Grid } from '@material-ui/core/';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import background from "../images/OctoCat.png"
 import theme from '../theme';
 
 const useStyles = makeStyles({
     root: {
         margin: "auto",
-        marginTop: "2%",
+        marginTop: "5%",
         width: "60%",
     },
     grid: {
+        display: "flex",
         alignItems: "center",
-        
     },
     car: {
         width: 345,
-        height: 300,
-    },
-    car_media: {
-        height: 200,
-        backgroundColor: "white",
-        color: theme.palette.secondary.main,
+        height: 100,
     },
     car_content: {
         color: theme.palette.secondary.main,
     },
-    catalog: {
+    lightsout: {
         width: 345,
-        height: 300,
+        height: 100,
     },
-    catalog_media: {
-        height: 200,
-        backgroundColor: "white",
-    },
-    catalog_content: {
+    lightsout_content: {
         color: theme.palette.secondary.main,
     },
-    sort: {
+    todo: {
         width: 345,
-        height: 300,
+        height: 100,
     },
-    sort_media: {
-        height: 200,
-        backgroundColor: "white",
-    },
-    sort_content: {
+    todo_content: {
         color: theme.palette.secondary.main,
     },
 });
@@ -63,10 +48,7 @@ export default function Projects() {
         <Grid
         container
         spacing={2}
-        direction="row"
-        justify="flex-start"
-        alignItems="flex-start"
-        classNme={classes.grid}
+        className={classes.grid}
         >
             <Grid 
             item xs={4}
@@ -76,11 +58,6 @@ export default function Projects() {
                     <CardActionArea
                     href="https://github.com/Pokemonpower92/Autonomous-Car"
                     >
-                        <CardMedia
-                        className={classes.car_media}
-                        image={background}
-                        title="Autonamous car"
-                        />
                         <CardContent className={classes.car_content}>
                         <Typography gutterBottom variant="h5" component="h2">
                             Autonomous car
@@ -94,20 +71,15 @@ export default function Projects() {
             </Grid>
             <Grid
                 item xs={4}
-                className={classes.catalog_grid}
+                className={classes.lightsout_grid}
             >
-                <Card className={classes.catalog}>
+                <Card className={classes.lightsout}>
                     <CardActionArea
                     href="https://pokemonpower92.github.io/lightsOut/"
                     >
-                        <CardMedia
-                        className={classes.catalog_media}
-                        image={background}
-                        title="Lights Out!"
-                        />
-                        <CardContent className={classes.catalog_content}>
+                        <CardContent className={classes.lightsout_content}>
                         <Typography gutterBottom variant="h5" component="h2">
-                            React Application
+                            LightsOut in React
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
                             A handheld game emulator written in React.
@@ -118,23 +90,18 @@ export default function Projects() {
             </Grid>
             <Grid
                 item xs={4}
-                className={classes.catalog_grid}
+                className={classes.todo_grid}
             >
-                <Card className={classes.sort}>
+                <Card className={classes.todo}>
                     <CardActionArea
-                    href="https://github.com/Pokemonpower92/Sort_comparision"
+                    href="https://pokemonpower92.github.io/todo/"
                     >
-                        <CardMedia
-                        className={classes.sort_media}
-                        image={background}
-                        title="sort"
-                        />
-                        <CardContent className={classes.sort_content}>
+                        <CardContent className={classes.todo_content}>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Sort Comparision
+                            Todo app in React
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            A program that compares various sorting algorithms in Python and C++
+                            This is a todo app I wrote to practice styling and forms in react.
                         </Typography>
                         </CardContent>
                     </CardActionArea>
