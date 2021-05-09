@@ -12,6 +12,7 @@ const useStyles = makeStyles({
         margin: "auto",
         marginTop: "5%",
         width: "60%",
+        height: 400,
     },
     grid: {
         display: "flex",
@@ -82,7 +83,7 @@ export default function Projects() {
                             LightsOut in React
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            A handheld game emulator written in React.
+                            A handheld game emulator written in React. Try to turn off all the lights!
                         </Typography>
                         </CardContent>
                     </CardActionArea>

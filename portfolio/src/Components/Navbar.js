@@ -47,7 +47,6 @@ export default function Navbar() {
                         className={classes.linkedin_button}
                         target="_blank"
                         href="http://www.linkedin.com/in/john-carmack-307525158"
-                        color="black"
                         startIcon={<LinkedInIcon />}
                     >
                         LinkedIn
@@ -56,7 +55,6 @@ export default function Navbar() {
                     className={classes.github_button}
                         target="_blank"
                         href="http://github.com/Pokemonpower92"
-                        color="black"
                         startIcon={<GitHubIcon/>}
                     >
                         GitHub
