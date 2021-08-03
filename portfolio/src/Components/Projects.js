@@ -1,114 +1,87 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core/';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import theme from '../theme';
-
-const useStyles = makeStyles({
-    root: {
-        margin: "auto",
-        marginTop: "5%",
-        width: "60%",
-        height: 400,
-    },
-    grid: {
-        display: "flex",
-        alignItems: "center",
-    },
-    car: {
-        width: 345,
-        height: 100,
-    },
-    car_content: {
-        color: theme.palette.secondary.main,
-    },
-    lightsout: {
-        width: 345,
-        height: 100,
-    },
-    lightsout_content: {
-        color: theme.palette.secondary.main,
-    },
-    todo: {
-        width: 345,
-        height: 100,
-    },
-    todo_content: {
-        color: theme.palette.secondary.main,
-    },
-});
+import Card from 'react-bootstrap/Card';
+import '../Styles/Projects.css';
 
 export default function Projects() {
-  const classes = useStyles();
 
-  return (
-    <div className={classes.root}>
-        <Grid
-        container
-        spacing={2}
-        className={classes.grid}
-        >
-            <Grid 
-            item xs={4}
-            className={classes.car_grid}
-            >
-                <Card className={classes.car}>
-                    <CardActionArea
-                    href="https://github.com/Pokemonpower92/Autonomous-Car"
-                    >
-                        <CardContent className={classes.car_content}>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Autonomous car
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            An autonomous car built on the Aurduino Platform.
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
+    return (
+        <div className="Projects">
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>LightsOut!</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">React app</Card.Subtitle>
+                        <Card.Text>
+                        A simple and familliar puzzle game implemented as a react application. Turn out all the lights to win!
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://pokemonpower92.github.io/lightsOut/">Demo</Card.Link>
+                            <Card.Link href="https://github.com/Pokemonpower92/lightsOut">Github</Card.Link>
+                        </div>
+                    </Card.Body>
                 </Card>
-            </Grid>
-            <Grid
-                item xs={4}
-                className={classes.lightsout_grid}
-            >
-                <Card className={classes.lightsout}>
-                    <CardActionArea
-                    href="https://pokemonpower92.github.io/lightsOut/"
-                    >
-                        <CardContent className={classes.lightsout_content}>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            LightsOut in React
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            A handheld game emulator written in React. Try to turn off all the lights!
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
+            </div>
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>Todo</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">React app</Card.Subtitle>
+                        <Card.Text>
+                        The canonical todo application implemented as a React Application.
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://pokemonpower92.github.io/todo/">Demo</Card.Link>
+                            <Card.Link href="https://github.com/Pokemonpower92/todo">Github</Card.Link>
+                        </div>
+                    </Card.Body>
                 </Card>
-            </Grid>
-            <Grid
-                item xs={4}
-                className={classes.todo_grid}
-            >
-                <Card className={classes.todo}>
-                    <CardActionArea
-                    href="https://pokemonpower92.github.io/todo/"
-                    >
-                        <CardContent className={classes.todo_content}>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Todo app in React
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            This is a todo app I wrote to practice styling and forms in react.
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
+            </div>
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>Radio-Controlled Car</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Arduino -- C++</Card.Subtitle>
+                        <Card.Text>
+                        A radio-controlled robot built with Arduino nano microcontrollers. 
+                        The car can be controlled by both a wireless controller and a command-line python program on a 
+                        Raspberry Pi.
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://github.com/Pokemonpower92/RCCar">Github</Card.Link>
+                        </div>
+                    </Card.Body>
                 </Card>
-            </Grid>
-        </Grid>
-    </div>
-  );
+            </div>
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>PawPoll</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">MERN Application</Card.Subtitle>
+                        <Card.Text>
+                        A polling application built with a mern stack. Data visualizations implemented with d3.
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://github.com/Pokemonpower92/PawPoll">Github</Card.Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+            </div>
+        </div>
+    )
 }
