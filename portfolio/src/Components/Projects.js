@@ -75,9 +75,30 @@ export default function Projects() {
                         <Card.Subtitle className="mb-2 text-muted">MERN Application</Card.Subtitle>
                         <Card.Text>
                         A polling application built with a mern stack. Data visualizations implemented with d3.
+                        Deployed on heroku with MongoDB Atlas
                         </Card.Text>
                         <div style={{marginTop: "auto"}}>
+                            <Card.Link href="http://paw-poll.herokuapp.com/">Demo</Card.Link>
                             <Card.Link href="https://github.com/Pokemonpower92/PawPoll">Github</Card.Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+            </div>
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>PiDration</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Electronics/Python</Card.Subtitle>
+                        <Card.Text>
+                        A soil analytics application built on the arduino and Raspberry Pi platforms. My plants kept
+                        dying :(
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://github.com/Pokemonpower92/PiDration">Github</Card.Link>
                         </div>
                     </Card.Body>
                 </Card>
