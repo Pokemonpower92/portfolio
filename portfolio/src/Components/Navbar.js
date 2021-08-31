@@ -43,22 +43,24 @@ export default function Navbar() {
                     >
                         John Carmack
                     </Typography>
-                    <Button
-                        className={classes.linkedin_button}
-                        target="_blank"
-                        href="http://www.linkedin.com/in/john-carmack-307525158"
-                        startIcon={<LinkedInIcon />}
-                    >
-                        LinkedIn
-                    </Button>
-                    <Button
-                    className={classes.github_button}
-                        target="_blank"
-                        href="http://github.com/Pokemonpower92"
-                        startIcon={<GitHubIcon/>}
-                    >
-                        GitHub
-                    </Button>
+                    <div className={classes.buttons}>
+                      <Button
+                          className={classes.linkedin_button}
+                          target="_blank"
+                          href="http://www.linkedin.com/in/john-carmack-307525158"
+                          startIcon={<LinkedInIcon />}
+                      >
+                          LinkedIn
+                      </Button>
+                      <Button
+                      className={classes.github_button}
+                          target="_blank"
+                          href="http://github.com/Pokemonpower92"
+                          startIcon={<GitHubIcon/>}
+                      >
+                          GitHub
+                      </Button>
+                    </div>
                 </Toolbar>
             </AppBar>
         </div>
