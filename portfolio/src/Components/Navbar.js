@@ -18,9 +18,11 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "none",
       width: "60%",
       margin: "auto",
+      display: "flex",
   },
   title: {
     color: theme.palette.secondary.main,
+    fontSize: "250%",
     flexGrow: 1,
     flex: 1,
   },
@@ -38,7 +40,7 @@ export default function Navbar() {
     return (
         <div className={classes.root}>
             <AppBar position="static" className={classes.bar}>
-                <Toolbar>
+                <Toolbar className={classes.ToolBar}>
                     <Typography
                         variant="h2" 
                         className={classes.title}
