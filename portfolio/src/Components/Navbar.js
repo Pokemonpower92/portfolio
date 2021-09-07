@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import DescriptionIcon from '@material-ui/icons/Description';
+import Resume from "../files/JohnCarmackResume.pdf";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +46,14 @@ export default function Navbar() {
                         John Carmack
                     </Typography>
                     <div className={classes.buttons}>
+                      <Button
+                          className={classes.linkedin_button}
+                          target="_blank"
+                          href={Resume}
+                          startIcon={<DescriptionIcon />}
+                      >
+                          Resume
+                      </Button>
                       <Button
                           className={classes.linkedin_button}
                           target="_blank"
