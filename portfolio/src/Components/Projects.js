@@ -103,6 +103,25 @@ export default function Projects() {
                     </Card.Body>
                 </Card>
             </div>
+            <div className="Projects-Card">
+            <Card style={{display: 'flex',
+                            flexDirection: 'column', 
+                            justifyContent: 'space-between', 
+                            width: '20rem', 
+                            height: '17rem'}}>
+                    <Card.Body style={{display: "flex", flexDirection: "column", alignItems: 'space-between'}}>
+                        <Card.Title>Word Searches</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">C++</Card.Subtitle>
+                        <Card.Text>
+                        A CLT that allows users to create pdf word searches from text files.
+                        Requires a postscript graphing utility called 'jgraph' that one of my favorite people wrote. 
+                        </Card.Text>
+                        <div style={{marginTop: "auto"}}>
+                            <Card.Link href="https://github.com/Pokemonpower92/WordSearch">Github</Card.Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+            </div>
         </div>
     )
 }
