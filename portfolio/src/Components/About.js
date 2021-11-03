@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       display: "flex",
       flexDirection: "column",
-      width: "60%",
+      width: "58%",
       minWidth: "25%",
       margin: "auto",
     },

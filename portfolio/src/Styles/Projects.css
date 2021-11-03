@@ -3,12 +3,12 @@
     justify-content: space-evenly;
     margin-top: 15px;
     flex-wrap: wrap;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .Projects-Card {
-    color: #6a1b9a;
+    color: #00000;
     display: flex;
     justify-content: space-between;
     padding: 5px
