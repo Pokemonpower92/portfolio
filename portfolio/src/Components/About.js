@@ -14,19 +14,19 @@ const useStyles = makeStyles((theme) => ({
 	avatar: {
 		height: "15%",
 		width: "15%",
-		marginTop: "5%",
+		marginTop: "2%",
 		alignSelf: "center",
 	},
 	title: {
-		marginTop: "5%",
+		marginTop: "2%",
 		textAlign: "center",
-		fontSize: "1.5rem",
+		fontSize: "1.1rem",
 		color: theme.palette.secondary.main,
 	},
 	projects_title: {
-		marginTop: "5%",
+		marginTop: "2%",
 		textAlign: "center",
-		fontSize: "1.5rem",
+		fontSize: "1.1rem",
 		color: theme.palette.secondary.main,
 	},
 }));
@@ -41,8 +41,7 @@ export default function About(theme) {
 				Hello! I'm John, a software engineer with experience writing
 				scalable, distributable software in python, javascript, and C++.
 				I love learning about web development and all things related to
-				software! I'm also really into art and Brazillian Jui-Jitsu. My
-				favorite Pokemon is Mimikyu.
+				software! My favorite Pokemon is Mimikyu.
 			</Typography>
 			<Typography className={classes.projects_title}>
 				Here are a few of the projects I've worked on.
